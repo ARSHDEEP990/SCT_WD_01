@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arshdeep's Portfolio</title>
+
+  <!-- CSS Link -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+
+  <!-- Boxicons (optional if used elsewhere) -->
+  <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <a href="#home" class="logo">Arshdeep <span>Singh</span></a>
+    <i class='bx bx-menu' id="menu-icon"></i>
+    <nav class="navbar">
+      <a href="#home" class="active">Home</a>
+      <a href="#education">Education</a>
+      <a href="#services">Services</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section class="home" id="home">
+    <div class="home-content">
+      <h1>Hi, It's <span>Arshdeep</span></h1>
+      <h3 class="text-animation">
+        I am a <span id="animated-text">Web Developer</span>
+      </h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium,
+        aperiam ducimus voluptate quaerat maiores quam laboriosam vel ad, sunt
+        iusto porro, accusamus molestiae ea nemo nobis sequi voluptas ullam
+        cumque. Obcaecati voluptatum ullam, laboriosam voluptatibus consectetur
+        reiciendis dolores officia harum eum ea nam enim nostrum ad possimus
+        quaerat commodi veritatis!
+      </p>
+
+      <!-- Social Icons -->
+      <div class="social-icons">
+        <a href="https://github.com/ARSHDEEP990" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/arshdeep-singh-284196308" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://twitter.com/yourusername" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://instagram.com/arshdeep_singh6_8" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
+
+      <!-- Buttons -->
+      <div class="btn-group">
+        <a href="#" class="btn">Hire</a>
+        <a href="#contact" class="btn">Contact</a>
+      </div>
+    </div>
+
+    <!-- Profile Image -->
+    <div class="home-img">
+      <img src="IMG_1812.jpeg" alt="Arshdeep Profile" />
+    </div>
+  </section>
+
+  <!-- Typing Animation Script -->
+  <script>
+    const roles = [
+      "Frontend Designer",
+      "Web Designer",
+      "UI / UX Designer",
+      "Web Developer",
+      "Software Tester"
+    ];
+
+    let index = 0;
+    const animatedText = document.getElementById("animated-text");
+
+    function updateText() {
+      animatedText.textContent = roles[index];
+      index = (index + 1) % roles.length;
+    }
+
+    setInterval(updateText, 3000);
+  </script>
+
+</body>
+</html>
